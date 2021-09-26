@@ -1,0 +1,29 @@
+﻿img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    float:left;
+
+}
+html
+{
+    background-color:lightgray;
+}
+
+
+h4, h3 {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+p {
+    font-size: 15px;
+    font-family: Arial;
+}
+
+footer {
+    background-color: #c800c8;
+    color: white;
+    height: 30px;
+    text-align: center;
+}

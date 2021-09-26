@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+@model ActividadDos.Models.PaginaPromedioViewModel
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Calcular promedio</title>
+</head>
+<body>
+    <h1>Calcular promedio con 3 calificaciones</h1>
+    <form method="get" action="~/Home/PaginaPromedio">
+        <h5>Introducir Primera Calificación:</h5>
+        <input max="100" min="0" name="CalificacionUno" type="number" value="@Model.CalificacionUno" />
+        <h5>Introducir Segunda Calificación:</h5>
+        <input max="100" min="0" name="CalificacionDos" type="number" value="@Model.CalificacionDos" />
+        <h5>Introducir Tercera Calificación:</h5>
+        <input max="100" min="0" name="CalificacionTres" type="number" value="@Model.CalificacionTres" /> <br /><br />
+        <input type="submit" value="Calcular promedio" />
+        <h4>Resultado</h4>
+        <input type="number" readonly="readonly" value="@Model.Resultado" />
+        <h3>Estado:</h3>
+        <input type="text" readonly="readonly" value="@Model.Estado" />
+    </form>
+    <footer>
+        <h2>Todos los derechos reservados por el ING Julio César Salazar.</h2>
+    </footer>
+</body>
+</html>
